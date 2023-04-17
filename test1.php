@@ -141,17 +141,27 @@
                 switch($minute){
                     case 60:{
                         $minute = 0;
+                        if($heure > 23){
+                            $heure = 0;
+                        } 
+                        else{
+                            $heure++;
+                        } 
+                        break;
                         
-                        if($heure > 23) $heure = 0;
-                        else $heure++;
                     } 
                     case 61:
                         {
                             $minute = 1;
+                            if($heure > 23){
+                                $heure = 0;
+                            } 
+                            else{
+                                $heure++;
+                            } 
                             
-                            if($heure > 23) $heure = 0;
-                            else $heure++;
-                        } 
+                        }
+                        break; 
                 }
             }
             else{

@@ -128,52 +128,44 @@
 
     //6° && 7°
 
-        $heure = readline("Heure(s) ? ");
-        $minute = readline("Minute(s) ? ");
-        $seconde = readline("Seconde(s) ? ");
+        // $heure = readline("Heure(s) ? ");
+        // $minute = readline("Minute(s) ? ");
+        // $seconde = readline("Seconde(s) ? ");
 
-        $seconde++;
-        $minute++;
+        // $minute++;
+        // $seconde++;
 
-        if($seconde >59 || $minute >59){
+        // if($seconde >=59){
+        //     $seconde = 0; 
+        //     if($minute > 59){
+        //         $minute = 1;
+        //         $heure++;
+        //         if($heure == 24){
+        //             $heure = 0;
+        //             echo "Dans 1 minute et 1 seconde, il sera ". $heure . "h:". $minute ."m:". $seconde ."s.";
+        //         }
+        //         else echo "Dans 1 minute et 1 seconde, il sera ". $heure . "h:". $minute ."m:". $seconde ."s.";
+        //     }
+        //     else {
+        //         $minute++;
+        //         echo "Dans 1 minute et 1 seconde, il sera ". $heure . "h:". $minute ."m:". $seconde ."s.";
+        //     }
             
-            if($minute >59){
-                switch($minute){
-                    case 60:{
-                        $minute = 0;
-                        if($heure > 23){
-                            $heure = 0;
-                        } 
-                        else{
-                            $heure++;
-                        } 
-                        break;
-                        
-                    } 
-                    case 61:
-                        {
-                            $minute = 1;
-                            if($heure > 23){
-                                $heure = 0;
-                            } 
-                            else{
-                                $heure++;
-                            } 
-                            
-                        }
-                        break; 
-                }
-            }
-            else{
-                $minute++;
-                $seconde = 0;
-            }
-        }
+        // }
+        // else if($minute >= 59){
+        //     $minute = 0;
+        //     $heure++;
+        //     if($heure == 24){
+        //         $heure = 0;
+        //         echo "Dans 1 minute et 1 seconde, il sera ". $heure . "h:". $minute ."m:". $seconde ."s.";
+        //     }
+        //     else echo "Dans 1 minute et 1 seconde, il sera ". $heure . "h:". $minute ."m:". $seconde ."s.";
+        // }
+        // else echo "Dans 1 minute et 1 seconde, il sera ". $heure . "h:". $minute ."m:". $seconde ."s.";
 
 
 
-        echo "Dans 1 minute et 1 seconde, il sera ". $heure . "h:". $minute ."m:". $seconde ."s.";
-        return;
+        // return;
 
     //8°
 
@@ -222,6 +214,38 @@
     //     }
     // return;
     // }
+
+    //9°
+
+    // $sexe = readline("De quel sexe êtes-vous? (M/F) ");
+    // $age = readline("De quel âge avez-vous? ");
+
+    // if($sexe == "M" && $age > 20){
+    //     echo "Vous payerez un impôt ! \n";
+    // }
+    // else if($sexe == "F" && $age >=18 && $age <= 35){
+    //     echo "Vous payerez un impôt ! \n";
+    // }
+    // else echo "Vous ne payerez pas un impôt ! \n";
+
+    //10°
+
+    $year = (float) readline("Année !? ");
+    $day =  (float) readline("Jour !? ");
+    $month =  (float) readline("Mois !? ");
+
+    
+    $r4 = fmod($year , 4);
+    $r400 = fmod($year , 400);
+    $r100 = fmod($year , 100);
+
+    
+    if($r4 == 0 && $r100 != 0 || $r400 == 0 && $r100 != 0){
+        if($day >29 && $month == 2 ) echo "Cette date n'existe pas !";
+        else echo "Année bissextile";
+    }
+    else echo "Année Non-bissextile";
+
 ?>
 
 

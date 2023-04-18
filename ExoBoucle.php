@@ -123,17 +123,12 @@
 // for($i=1;$i<=5;$i++){
 //     $saisie = (float) readline("Entrer un nombre : ");
 //     if($saisie>$saveMax){
-//         $saveMaxTest = $saveMax;
 //         $saveMax = $saisie;
-//         if($saveMaxTest<$saveMin){
-//             $saveMin = $saveMaxTest;
-//         }
-//         else if($i==1){
+//         if($i==1){
 //             $saveMin = $saveMax;
 //         }
 //     }
 //     else if($saisie<$saveMin){
-//         $saveMinTest = $saveMin;
 //         $saveMin = $saisie;
 //     }
 // }

@@ -109,20 +109,20 @@
     // $age = readline("Quel âge a l'enfant ? ");
     // switch($age)
     // {
-    //     case ($age == 6 || $age == 7): 
+    //     case 6,7: 
     //         echo "L'enfant est Poussin. \n";
     //         break;
-    //     case ($age == 8 || $age == 9):
+    //     case 8, 9:
     //         echo "L'enfant est Pupille. \n";
     //         break;
-    //     case ($age == 10 || $age == 11):
+    //     case 10,11:
     //         echo "L'enfant est Minime. \n";
     //         break;
     //     case 12:
     //         echo "L'enfant est Cadet. \n";
     //         break;
     //     default:
-    //         echo "L'enfant n'a pas l'âge requis pour ces catégories... ";
+    //         echo "Après concertation en réunion: L'enfant n'a pas l'âge requis pour ces catégories... ";
     //         break;
     // }
 
@@ -142,13 +142,13 @@
         //         $heure++;
         //         if($heure == 24){
         //             $heure = 0;
-        //             echo "Dans 1 minute et 1 seconde, il sera ". $heure . "h:". $minute ."m:". $seconde ."s.";
+        //             translateEcho($heure, $minute, $seconde);
         //         }
-        //         else echo "Dans 1 minute et 1 seconde, il sera ". $heure . "h:". $minute ."m:". $seconde ."s.";
+        //         else translateEcho($heure, $minute, $seconde);
         //     }
         //     else {
         //         $minute++;
-        //         echo "Dans 1 minute et 1 seconde, il sera ". $heure . "h:". $minute ."m:". $seconde ."s.";
+        //         translateEcho($heure, $minute, $seconde);
         //     }
             
         // }
@@ -157,17 +157,22 @@
         //     $heure++;
         //     if($heure == 24){
         //         $heure = 0;
-        //         echo "Dans 1 minute et 1 seconde, il sera ". $heure . "h:". $minute ."m:". $seconde ."s.";
+        //         translateEcho($heure, $minute, $seconde);
         //     }
-        //     else echo "Dans 1 minute et 1 seconde, il sera ". $heure . "h:". $minute ."m:". $seconde ."s.";
+        //     else translateEcho($heure, $minute, $seconde);
         // }
-        // else echo "Dans 1 minute et 1 seconde, il sera ". $heure . "h:". $minute ."m:". $seconde ."s.";
+        // else translateEcho($heure, $minute, $seconde);
 
+        // function translateEcho($heure, $minute, $seconde){
+        //     for($i=0; $i<3; $i++){
+        //         if($heure<10 && $i==0){$heure = "0".$heure;}  
+        //         else if($minute<10 && $i==1){$minute = "0".$minute;}
+        //         else if ($seconde<10 && $i==2) $seconde = "0".$seconde;
+        //     }
+        //     echo "Dans 1 minute et 1 seconde, il sera ". $heure . "h:". $minute ."m:". $seconde ."s.";     
+        // }
 
-
-        // return;
-
-    //8°
+        //8°
 
     // $numberClient = readline("Nombre de reproduction souhaité ? ");
     // $facture = 0;
@@ -180,17 +185,17 @@
     //     switch($numberClient){
     //         case ($numberClient <= 10):
     //             for($i=0; $i<$numberClient; $i++){
-    //                 $facture = $facture + 0.10; 
+    //                 $facture += 0.10; 
     //             }
     //             echo "Votre sera de ". $facture ."Eur. \n";
     //             break;
     //         case ($numberClient > 10 && $numberClient <= 30):
     //             for($i=0; $i<$numberClient; $i++){
     //                 if($i <= 10){
-    //                     $facture = $facture + 0.10; 
+    //                     $facture += 0.10; 
     //                 }
     //                 else{
-    //                     $facture = $facture + 0.09;
+    //                     $facture += 0.09;
     //                 }
     //             }
     //             echo "Votre sera de ". $facture ."Eur. \n";
@@ -198,13 +203,13 @@
     //         case ($numberClient > 30):
     //             for($i=0; $i<$numberClient; $i++){
     //                 if($i <= 10){
-    //                      $facture = $facture + 0.10; 
+    //                      $facture += 0.10; 
     //                 }
     //                 else if($i > 10 && $i <=30){
-    //                     $facture = $facture + 0.09;
+    //                     $facture += 0.09;
     //                 }
     //                 else{
-    //                     $facture = $facture + 0.08;
+    //                     $facture += 0.08;
     //                 }    
     //             }
     //             echo "Votre sera de ". $facture ."Eur. \n";
@@ -230,21 +235,21 @@
 
     //10°
 
-    $year = (float) readline("Année !? ");
-    $day =  (float) readline("Jour !? ");
-    $month =  (float) readline("Mois !? ");
+    // $year = (float) readline("Année !? ");
+    // $day =  (float) readline("Jour !? ");
+    // $month =  (float) readline("Mois !? ");
 
     
-    $r4 = fmod($year , 4);
-    $r400 = fmod($year , 400);
-    $r100 = fmod($year , 100);
+    // $r4 = fmod($year , 4);
+    // $r400 = fmod($year , 400);
+    // $r100 = fmod($year , 100);
 
     
-    if($r4 == 0 && $r100 != 0 || $r400 == 0 && $r100 != 0){
-        if($day >29 && $month == 2 ) echo "Cette date n'existe pas !";
-        else echo "Année bissextile";
-    }
-    else echo "Année Non-bissextile";
+    // if($r4 == 0 && $r100 != 0 || $r400 == 0 && $r100 != 0){
+    //     if($day >29 && $month == 2 ) echo "Cette date n'existe pas !";
+    //     else echo "Année bissextile";
+    // }
+    // else echo "Année Non-bissextile";
 
 ?>
 

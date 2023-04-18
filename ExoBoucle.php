@@ -85,7 +85,7 @@
 
 // $numRand = rand(1,9);
 
-// for($i=1; $i<11; $i++){
+// for($i=1; $i<=10; $i++){
 //     $r = $numRand*$i;
 //     echo $i." x ".$numRand." = ".$r."\n";
 // }
@@ -95,13 +95,13 @@
 // $saisie = (float) readline("Entrer un nombre : ");
 
 // echo "Les 5 nombres précédents sont: \n";
-// for($i=1; $i<6; $i++){
+// for($i=1; $i<=5; $i++){
 //     $r = $saisie-$i;
 //     echo $r."\n";
 // }
 // echo "*********************\n";
 // echo "Les 5 nombres suivant sont: \n";
-// for($i=1; $i<6; $i++){
+// for($i=1; $i<=5; $i++){
 //     $r = $saisie+$i;
 //     echo $r."\n";
 // }
@@ -117,22 +117,23 @@
 
 //4°-------------------------------------------------------------------------------------
 
-// $saveMax = 0;
-// $saveMin = 0;
+$saveMax = 0;
+$saveMin = 0;
 
-// for($i=1;$i<=5;$i++){
-//     $saisie = (float) readline("Entrer un nombre : ");
-//     if($saisie>$saveMax){
-//         $saveMax = $saisie;
-//         if($i==1){
-//             $saveMin = $saveMax;
-//         }
-//     }
-//     else if($saisie<$saveMin){
-//         $saveMin = $saisie;
-//     }
-// }
-// echo "Max : ".$saveMax."  -  Min : " .$saveMin;
+for($i=1;$i<=5;$i++){
+    $saisie = (float) readline("Entrer un nombre : ");
+    if($i==1){
+        $saveMax = $saisie;
+        $saveMin = $saisie;
+    }
+    else if($saisie>$saveMax){
+        $saveMax = $saisie;
+    }
+    else if($saisie<$saveMin){
+        $saveMin = $saisie;
+    }
+}
+echo "Max : ".$saveMax."  -  Min : " .$saveMin;
 
 
 ?>

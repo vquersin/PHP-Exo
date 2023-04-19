@@ -117,23 +117,23 @@
 
 //4°-------------------------------------------------------------------------------------
 
-$saveMax = 0;
-$saveMin = 0;
+// $saveMax = 0;
+// $saveMin = 0;
 
-for($i=1;$i<=5;$i++){
-    $saisie = (float) readline("Entrer un nombre : ");
-    if($i==1){
-        $saveMax = $saisie;
-        $saveMin = $saisie;
-    }
-    else if($saisie>$saveMax){
-        $saveMax = $saisie;
-    }
-    else if($saisie<$saveMin){
-        $saveMin = $saisie;
-    }
-}
-echo "Max : ".$saveMax."  -  Min : " .$saveMin;
+// for($i=1;$i<=5;$i++){
+//     $saisie = (float) readline("Entrer un nombre : ");
+//     if($i==1){
+//         $saveMax = $saisie;
+//         $saveMin = $saisie;
+//     }
+//     else if($saisie>$saveMax){
+//         $saveMax = $saisie;
+//     }
+//     else if($saisie<$saveMin){
+//         $saveMin = $saisie;
+//     }
+// }
+// echo "Max : ".$saveMax."  -  Min : " .$saveMin;
 
-
+// Fin EXO
 ?>

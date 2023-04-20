@@ -8,9 +8,9 @@
 // $nb = (float) readline("Donner un nombre entre 1 et 3 : ");
 
 // while($nb<1 || $nb>3){
-//     $nb = (float) readline("Donner un nombre: ");
+//     $nb = (float) readline("Donner un nombre entre 1 et 3 : ");
 // }
-// echo "C'est good ma guy ! ";
+// echo "C'est good ma DUDE ! ";
 
 //2°-------------------------------------------------------------------------------------
 
@@ -27,14 +27,14 @@
 //     }
     
 // }
-// echo "C'est good ma guy ! ";
+// echo "C'est good ma DUDE ! ";
 
 //3°-------------------------------------------------------------------------------------
 
-// $nb = (float) readline("Donner un nombre : ");
-// $saisie = $nb+10;
+// $nb = (int) readline("Donner un nombre : ");
+// $compteur = $nb+10;
 
-// while($nb != $saisie){
+// while($nb != $compteur){ /* $nb!=($nb+10) */
 //     $nb++;
 //     echo " " . $nb . " -";
 // }
@@ -54,8 +54,6 @@
 //     } 
 //     return $a; 
 // }
-
-
 //    $pgcd = PGCD($a, $b);
 //    echo  $pgcd." - Done.";
 
@@ -76,7 +74,6 @@
 // }
 //     $pgcd = PGCD($a, $b);
 //     $ppcm = ($a*$b)/$pgcd;
-//     echo  "PGCD : ".$pgcd." - Done. \n";
 //     echo  "PPCM : ".$ppcm." - Done. \n";
 
 // EXO "FOR"-------------------------------------------------------------------------------------
@@ -92,7 +89,7 @@
 
 //2°-------------------------------------------------------------------------------------
 
-// $saisie = (float) readline("Entrer un nombre : ");
+// $saisie = (int) readline("Entrer un nombre : ");
 
 // echo "Les 5 nombres précédents sont: \n";
 // for($i=1; $i<=5; $i++){
@@ -108,12 +105,12 @@
 
 //3°-------------------------------------------------------------------------------------
 
-// $saisie = (float) readline("Entrer un nombre : ");
-// $r = 1;
+// $saisie = (int) readline("Entrer un nombre : ");
+// $fact = 1;
 // for($i=1; $i<=$saisie; $i++){
-//     $r = $r*$i;
+//     $fact = $fact*$i;
 // }
-// echo "Le factorielle de ".$saisie. " vaut : " .$r."\n";
+// echo "Le factorielle de ".$saisie. " vaut : " .$fact."\n";
 
 //4°-------------------------------------------------------------------------------------
 
@@ -121,7 +118,7 @@
 // $saveMin = 0;
 
 // for($i=1;$i<=5;$i++){
-//     $saisie = (float) readline("Entrer un nombre : ");
+//     $saisie = (int) readline("Entrer un nombre : ");
 //     if($i==1){
 //         $saveMax = $saisie;
 //         $saveMin = $saisie;

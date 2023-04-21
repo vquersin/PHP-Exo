@@ -60,7 +60,7 @@ while($endJ1==0 || $endCroupier==0){
     else if($tourJ1 == 0){
         while($tourJ1 == 0 && $endCroupier != 1){
             // Tour de l'Ordi...
-            echo " ----------------------TOUR ORDI !!!----------------------------- \n";
+            echo " ----------------------TOUR CROUPIER !!!----------------------------- \n";
             echo "Le score du croupier est de : ".$scoreCroupier.".\n";
             $croupier = tourOrdinateur($scoreCroupier); // GESTION D'IA
             if ($croupier == 1) {

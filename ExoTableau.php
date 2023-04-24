@@ -394,20 +394,44 @@
 
 //2°
 
-$suite = array();
-for($i=1;$i<=13;$i++){
-    if($i<=7){
-        for($j=1;$j<=$i;$j++){
-            $suite[$i][$j]="♦";
-            echo $suite[$i][$j];
-        }
-    }
-    else{
-        for($j=1;$j<=1;$j++){
-            $suite[$i][$j]="♦";
-            echo $suite[$i][$j];
-        }
-    }
-    echo "\n";
-}
+// $suite = array();
+// for($i=1;$i<=13;$i++){
+//     if($i<=7){
+//         for($j=1;$j<=$i;$j++){
+//             $suite[$i][$j]="♦";
+//             echo $suite[$i][$j];
+//         }
+//     }
+//     else{
+//         for($j=(13-$i);$j>=0;$j--){
+//             $suite[$i][$j]="♦";
+//             echo $suite[$i][$j];
+//         }
+//     }
+//     echo "\n";
+// }
+
+//
+
+// $suite = array();
+// for($i=1;$i<=8;$i++){
+//         for($j=1;$j<=$i;$j++){
+//             switch($j){
+//                 case $j<2 || $j==$i:
+//                     $suite[$i][$j]="♦";
+//                     echo $suite[$i][$j];
+//                     break;
+//                 case $j>1&&$j<$i && $i!=8:
+//                     $suite[$i][$j]="○";
+//                     echo $suite[$i][$j];
+//                     break;
+//                 default:
+//                     $suite[$i][$j]="♦";
+//                     echo $suite[$i][$j];
+//                     break;
+
+//             }
+//         }
+//     echo "\n";
+// }
 ?>
